@@ -1,0 +1,197 @@
+
+  /* Main container */
+  #main-hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.container1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; /* Set to align from the top */
+    left: 0;
+    background-image: radial-gradient(#800, #ffc217);
+    overflow: hidden;
+    z-index: -999;
+}
+
+
+/* Slide container */
+#slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Slide item */
+#slide{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+#slide .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: 20%; /* Ensures the image fills the container */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#slide .item img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover; /* Ensures the image covers the entire container while maintaining its aspect ratio */
+        object-position: center; /* Centers the image within the container */
+    
+}
+
+.content .left{
+    position: absolute;
+    left:40px;
+    top:30%;
+    display: none;
+}
+.content .left h1{
+    font-size: xxx-large;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+.content .left .des{
+    font-size: small;
+    font-weight: 100;
+    opacity: 0.6;
+    margin-bottom:20px;
+}
+.content .left button{
+    font-size: small;
+    background-color: transparent;
+    border:none;
+    color:#800;
+}
+.content .left button i:nth-child(1){
+    margin-left: 10px;
+}
+.content .right{
+    position: absolute;
+    right:40px;
+    top:30%;
+    display: none;
+}
+.content .right h2{
+    font-size: large;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+.content .right ul{
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+.content .right li{
+    font-size: small;
+    position: relative;
+    margin-top: 20px;
+}
+.content .right li::before{
+    position: absolute;
+    left:-40px;
+    top:50%;
+    transform: translate(0,-50%);
+    width:8px;
+    height: 8px;
+    background-color: #800;
+    content:'';
+    border-radius: 50%;
+    box-shadow:  0 0 10px #800;
+}
+.content .right li p:nth-child(1){
+    font-weight: 500;
+    padding:0;
+    margin:0;
+}
+.content .right li p:nth-child(2){
+    font-weight: 100;
+    padding:0;
+    margin:0;
+    font-size: x-small;
+}
+#slide .item:nth-child(1) .image{
+    opacity: 0;
+    transform: scale(0) translate(-100px);
+}
+#slide .item:nth-child(2) .image{
+    opacity: 1;
+    transform: scale(1);
+}
+#slide .item:nth-child(2){
+    z-index: 3;
+}
+@keyframes contentOut {
+    from{
+        opacity: 1;
+    transform: translate(0,0);
+    }to{
+        opacity: 0;
+        transform: translate(0,-100%);
+        filter:blur(113px)
+    }
+}
+@keyframes contentIn {
+    from{
+        opacity: 0;
+    transform: translate(0,100%);
+    filter:blur(33px)
+    }to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+/* Directional buttons */
+.directional {
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+.directional button {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    opacity: 0.2;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.directional button:hover {
+    opacity: 1;
+}
+
+/* Left and Right content positioning */
+
+
+#slide .item:nth-child(1) .left,
+#slide .item:nth-child(1) .right,
+#slide .item:nth-child(2) .left,
+#slide .item:nth-child(2) .right {
+    display: block;
+}
+
+#slide .item:nth-child(1) .left,
+#slide .item:nth-child(1) .right {
+    animation: contentOut 1s ease-in-out 1 forwards;
+}
+
+#slide .item:nth-child(2) .left,
+#slide .item:nth-child(2) .right {
+    animation: contentIn 1s ease-in-out 1 forwards;
+}
