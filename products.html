@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>الشفاء - المنتجات</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+ 
+        <!-- Icon Font Stylesheet -->
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/banner.css">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    </head>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+         <!-- Navbar start -->
+         <div class="container-fluid nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary">
+                            <img src="img/logo no-bg.png" alt="الشفاء" style="max-width: 100px; height: auto;">
+                        </h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link ">الرئيسية</a>
+                            <a href="about.html" class="nav-item nav-link">من نحن</a>
+                            <a href="blog.html" class="nav-item nav-link">المدونة</a>
+                            <a href="products.html" class="nav-item nav-link active">المنتجات</a>
+                            <a href="contact.html" class="nav-item nav-link">اتصل بنا</a>
+                        </div>
+                        <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex backcolor800" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        
+                        <a href="cart.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill backcolor800">السلة</a>
+                        </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0 main-breadcrumbs">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4 color800e13">المنتجات</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item text-dark" aria-current="page">المنتجات</li>
+                    <li class="breadcrumb-item"><a href="#">الصفحات</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                    
+                    
+                </ol>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- products start -->
+        <div class="container-fluid menu py-6">
+            <div class="container"> <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill active button-styles" data-bs-toggle="pill" href="#tab-6">
+                            <span class="text-dark category_style" >الكل</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill button-styles" data-bs-toggle="pill" href="#tab-7">
+                            <span class="text-dark category_style" >عطور</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill button-styles" data-bs-toggle="pill" href="#tab-8">
+                            <span class="text-dark category_style" >زيوت</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill button-styles" data-bs-toggle="pill" href="#tab-9">
+                            <span class="text-dark category_style" >منتجات صحية</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill button-styles"  data-bs-toggle="pill" href="#tab-10">
+                            <span class="text-dark category_style" >عسل</span>
+                        </a>
+                    </li>
+                </ul>
+                <div id="container">
+                    <div class="cont rtl">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="img/productrs_images/img1.jpg" alt="" class="product_imgs">
+                            </div>
+                            <div class="product-card__info">
+                                <h2 class="product-card__title">اسم المنتج</h2>
+                                <p class="product-card__description">  التعريف عن المنتج بشكل بسيط</p>
+                                <div class="product-card__price-row">
+                                    <span class="product-card__price color800e13">السعر</span>
+                                    <a href="cart.html"><button class="product-card__btn button-styles">اضافة الى السلة</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont rtl">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="img/productrs_images/img2.jpg" alt="" class="product_imgs">
+                            </div>
+                            <div class="product-card__info">
+                                <h2 class="product-card__title">اسم المنتج</h2>
+                                <p class="product-card__description">  التعريف عن المنتج بشكل بسيط</p>
+                                <div class="product-card__price-row">
+                                    <span class="product-card__price color800e13">السعر</span>
+                                    <a href="cart.html"><button class="product-card__btn button-styles">اضافة الى السلة</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont rtl">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="img/productrs_images/img13.jpg" alt="" class="product_imgs">
+                            </div>
+                            <div class="product-card__info">
+                                <h2 class="product-card__title">اسم المنتج</h2>
+                                <p class="product-card__description">  التعريف عن المنتج بشكل بسيط</p>
+                                <div class="product-card__price-row">
+                                    <span class="product-card__price color800e13">السعر</span>
+                                    <a href="cart.html"><button class="product-card__btn button-styles">اضافة الى السلة</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont rtl">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="img/productrs_images/img19.jpg" alt="" class="product_imgs">
+                            </div>
+                            <div class="product-card__info">
+                                <h2 class="product-card__title">اسم المنتج</h2>
+                                <p class="product-card__description">  التعريف عن المنتج بشكل بسيط</p>
+                                <div class="product-card__price-row">
+                                    <span class="product-card__price color800e13">السعر</span>
+                                    <a href="cart.html"><button class="product-card__btn button-styles">اضافة الى السلة</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont rtl">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="img/productrs_images/img9.png" alt="" class="product_imgs">
+                            </div>
+                            <div class="product-card__info">
+                                <h2 class="product-card__title">اسم المنتج</h2>
+                                <p class="product-card__description">  التعريف عن المنتج بشكل بسيط</p>
+                                <div class="product-card__price-row">
+                                    <span class="product-card__price color800e13">السعر</span>
+                                    <a href="cart.html"><button class="product-card__btn button-styles">اضافة الى السلة</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont rtl">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="img/productrs_images/img12.jpg" alt="" class="product_imgs">
+                            </div>
+                            <div class="product-card__info">
+                                <h2 class="product-card__title">اسم المنتج</h2>
+                                <p class="product-card__description">  التعريف عن المنتج بشكل بسيط</p>
+                                <div class="product-card__price-row">
+                                    <span class="product-card__price color800e13">السعر</span>
+                                    <a href="cart.html"><button class="product-card__btn button-styles">اضافة الى السلة</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont rtl">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="img/productrs_images/img11.png" alt="" class="product_imgs">
+                            </div>
+                            <div class="product-card__info">
+                                <h2 class="product-card__title">اسم المنتج</h2>
+                                <p class="product-card__description">  التعريف عن المنتج بشكل بسيط</p>
+                                <div class="product-card__price-row">
+                                    <span class="product-card__price color800e13">السعر</span>
+                                    <a href="cart.html"><button class="product-card__btn button-styles">اضافة الى السلة</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont rtl">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="img/productrs_images/img14.jpg" alt="" class="product_imgs">
+                            </div>
+                            <div class="product-card__info">
+                                <h2 class="product-card__title">اسم المنتج</h2>
+                                <p class="product-card__description">  التعريف عن المنتج بشكل بسيط</p>
+                                <div class="product-card__price-row">
+                                    <span class="product-card__price color800e13">السعر</span>
+                                    <a href="cart.html"><button class="product-card__btn button-styles">اضافة الى السلة</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- products end -->
+
+       <!-- Footer Start -->
+       <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp footer rtl" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h1 class="text-primary">
+                            <img src="img/logo.png" alt="الشفاء" style="max-width: 150px; height: auto;">
+                        </h1>
+                        <p class="lh-lg mb-4 color00">
+                            نحن في معاصر الشفاء نلتزم بتقديم أفضل المنتجات الطبيعية والصحية التي تضمن لك تجربة فريدة ومميزة. نحن متخصصون في الزيوت الطبيعية، العسل اليمني الأصلي، والعطور الفاخرة</p>
+                        <div class="footer-icon d-flex">
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle backcolorffc"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle backcolorffc"><i class="fab fa-twitter" ></i></a>
+                            <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle backcolorffc"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4 colorffc107">القائمة</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="text-body mb-3 color800e13" href="index.html">الرئيسية</a>
+                            <a class="text-body mb-3 color800e13" href="about.html">من نحن</a>
+                            <a class="text-body mb-3 color800e13" href="products.html">المنتجات</a>
+                            <a class="text-body mb-3 color800e13" href="blog.html">المدونة</a>
+                            <a class="text-body mb-3 color800e13" href="contact.html">اتصل بنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4 colorffc107">اتصل بنا</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <p class="color800e13"><i class="fa fa-map-marker-alt text-primary me-2 colorffc107"></i>صنعاء/اليمن</p>
+                            <p class="color800e13"><i class="fa fa-phone-alt text-primary me-2 colorffc107"></i>  11 2345 100(967+)</p>
+                            <p class="color800e13"><i class="fas fa-envelope text-primary me-2 colorffc107"></i> info@example.com</p>
+                            <p class="color800e13"><i class="fa fa-clock text-primary me-2 colorffc107"></i> 8 صباحا حتى ال 10 مساءا</p> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4 colorffc107">المنتجات</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="text-body mb-3 " href="products.html"><i class="fa fa-check text-primary me-2 colorffc107"></i>عسل</a>
+                            <a class="text-body mb-3 " href="products.html"><i class="fa fa-check text-primary me-2 colorffc107"></i>زيوت طبيعية</a>
+                            <a class="text-body mb-3 " href="products.html"><i class="fa fa-check text-primary me-2 colorffc107"></i>عطور</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright  py-4 backcolorffc" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i><img src="img/logo no-bg.png" alt="الشفاء" style="max-width: 70px; height: auto;"></a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    <a class="border-bottom" href="http://neomatrixye.com/">NeoMatrix</a> صمم بواسطة
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top backcolor800"><i class="fa fa-arrow-up colorff"></i></a>   
+
+
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
